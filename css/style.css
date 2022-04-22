@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=DM+Sans&family=Inter:wght@100;200&family=M+PLUS+Rounded+1c:wght@300&family=Montserrat:wght@200&family=Overpass:wght@100&family=Playfair+Display&family=Ramaraja&family=Roboto:wght@300&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=DM+Sans&family=Inter:wght@100;200&family=M+PLUS+Rounded+1c:wght@300&family=Montserrat:wght@200&family=Overpass:wght@100&family=Playfair+Display&family=Ramaraja&family=Roboto:wght@300&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#board{
+    background: linear-gradient(rgb(243 158 97),rgb(229 234 153));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18 ,1fr);
+} 
+
+#scoreBox{
+   position: absolute;
+   top: 2%;
+   right: 14%;
+   font-size: 40px;
+   font-weight: bold;
+   font-family: 'Roboto', sans-serif;
+}
+#HighscoreBox{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.head{
+    background:linear-gradient(rgb(255, 1, 1),rgb(255, 255, 2));
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: scale(1.02);
+}
+.snake{
+    background:linear-gradient(rgb(137, 59, 3),rgb(7, 203, 11));
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 12px;
+}
+.food{
+    background-color: rgb(253, 249, 6);
+    border-radius: 120px;
+}
